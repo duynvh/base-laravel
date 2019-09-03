@@ -1,4 +1,4 @@
-###Install application.
+### Install application.
 -   Clone project and setup
 -   Start docker
 
