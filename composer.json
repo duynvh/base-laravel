@@ -36,7 +36,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Module\\Contact\\": "modules/contact/src"
+            "Module\\Contact\\": "modules/contact/src",
+            "Module\\Base\\": "modules/base/src"
         },
         "classmap": [
             "database/seeds",

@@ -178,7 +178,8 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
 
-        \Module\Contact\ContactServiceProvider::class
+        \Module\Contact\ContactServiceProvider::class,
+        \Module\Base\BaseServiceProvider::class
 
     ],
 
