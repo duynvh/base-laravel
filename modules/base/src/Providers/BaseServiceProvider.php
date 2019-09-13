@@ -8,13 +8,11 @@ class BaseServiceProvider extends ServiceProvider
 {
     public function register()
     {
-//        $this->loadRoutesFrom(__DIR__ . '/../../routes/web.php');
-//        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'module-base');
-//        $this->loadMigrationsFrom(__DIR__ . '/../../database/migrations');
+        $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'module-base');
     }
 
     public function boot()
     {
-
+        $this->loadTranslationsFrom(__DIR__ . '/../../resources/lang', 'module-base');
     }
 }

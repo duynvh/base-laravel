@@ -135,13 +135,12 @@ class BaseHttpResponse implements Responsable
      */
     public function toApiResponse()
     {
-        if ($this->data instanceof JsonResource) {
-            return $this->data->additional([
+        return response()
+            ->json([
                 'error'   => $this->error,
+                'data'    => $this->data,
                 'message' => $this->message,
-            ]);
-        }
-        return $this->toResponse(request());
+            ], $this->code);
     }
 
     /**

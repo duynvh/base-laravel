@@ -179,8 +179,9 @@ return [
         Barryvdh\Cors\ServiceProvider::class,
 
         \Module\Contact\ContactServiceProvider::class,
-        \Module\Base\BaseServiceProvider::class
-
+        \Module\Base\BaseServiceProvider::class,
+        \Module\Acl\AclServiceProvider::class,
+        \Module\Blog\BlogServiceProvider::class
     ],
 
     /*

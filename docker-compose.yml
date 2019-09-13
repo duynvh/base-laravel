@@ -18,9 +18,9 @@ services:
       restart: always
       working_dir: /application
       volumes:
-        - .:/application
+        - ./db:/application
       environment:
-        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_R
         - MYSQL_DATABASE=database
       ports:
         - "8082:3306"
